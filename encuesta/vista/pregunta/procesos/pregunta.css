@@ -1,0 +1,96 @@
+.card-body, .card {
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.my-menu-per {
+    background-color: rgb(60,70,100);
+}
+
+.my-contenedor-sombra{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-bottom: 10px;
+}
+
+.my-logo-per{
+    width: 80px;
+    height: 70px;
+}
+
+.my-lista-logo {
+    list-style: outside none none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4); 
+}
+
+.text-underline {
+    height: 2px;
+    content: '';
+    background: #ffc107;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    width: 255px;
+}
+
+.my-nombre-usuario{
+    color: white;
+    text-align: right;
+}
+
+.my-btn-per{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.my-btn-per:hover{
+    cursor: pointer;
+}
+
+.my-usuario-opcion{
+    position: absolute;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 6%;
+    border: 1px solid #c6c2bd;
+    top: 80%;
+    right: 10px;
+    z-index: 10;
+}
+
+.my-opciones a{
+    text-decoration: none !important;
+}
+
+.my-img-per{
+    width: 70px;
+    height: 70px;
+}
+
+.my-titulo-texto{
+    font-size: 18px;
+    color: #1421af;
+    line-height: 1em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.my_menu_reporte{
+    color: white;
+}
+
+.my_menu_reporte:hover, .my_menu_reporte:active{
+    cursor: pointer;
+    color: #ffc107;
+}
+
+.my-text-white {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+}
