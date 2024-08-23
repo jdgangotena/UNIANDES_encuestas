@@ -6,7 +6,7 @@ class funciones extends conexion{
 
     #No retorna la consulta ejecutada
     public function ejecutarSReturn($consulta){
-        $resultado = $this->consulta($consulta);
+        $resultado = $this->consulta($consulta, 0);
     }
     
     #Retorna consulta ejecutada
