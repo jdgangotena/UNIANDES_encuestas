@@ -209,16 +209,11 @@ function noDesclickCheck(id){
 }
 
 function mensajeEncuesta(mensaje){
-    var my_icono = "";
-    if(mensaje == "OK"){
-        my_icono ='<i class="fa fa-check text-success" style="font-size:50px;" aria-hidden="true"></i>';
-        setTimeout(function(){ abrirModalOKI("Gracias por realizar la encuesta.", my_icono);}, 600);
-        reDireccionarOKI();
-    }else if(mensaje == "NUL"){
-        my_icono ='<i class="fa fa-close text-danger" style="font-size:50px;" aria-hidden="true"></i>';
-        abrirModalOKI("Error al guardar la encuesta.", my_icono);
-    }else{
-        my_icono ='<i class="fa fa-exclamation text-warning" style="font-size:50px;" aria-hidden="true"></i>';
+    if(mensaje === "OK"){
+        alert("OK, pregunta guardada");
+        window.location.href = 'index.php'; // Redirigir a la página de inicio
+    } else {
+        var my_icono = '<i class="fa fa-exclamation text-warning" style="font-size:50px;" aria-hidden="true"></i>';
         setTimeout(function(){ abrirModalOKI(mensaje, my_icono);}, 600);
         setTimeout(function(){ miModalOkiClose();}, 2000);
     }
