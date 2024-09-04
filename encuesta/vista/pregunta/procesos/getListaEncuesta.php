@@ -10,7 +10,7 @@
 
         $resultado = $conectar->ejecutarReturn($consulta);
 
-        $escribir = "<option value='0' selected >[SELECCIONAR]</option>";
+        $escribir = "<option value='0' selected >Seleccionar</option>";
         if(mysqli_num_rows($resultado)>0){
             while($fila=$resultado->fetch_array()){
                 $escribir.= '<option value="'.$fila[0].'">'.$fila[1].'</option>';

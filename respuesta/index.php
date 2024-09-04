@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="col-sm-12 centrar-custom my-img-content-p">
-                            <img class="my-img-logo-per" src="./assets/img/logobS360.jpg" alt="S360">
+                            <img class="my-img-logo-per" src="./assets/img/logoescudo.png" alt="escudo">
                         </div>
                     </div>
                     <div class="col-sm-12">

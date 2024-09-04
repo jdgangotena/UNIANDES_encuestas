@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>SISTEMA DE ENCUESTA</title>
+        <title>SISTEMA DE ENCUESTAS MDMQ</title>
         <?php 
         session_start();
         $ruta = './';
@@ -13,13 +13,13 @@
             <div class="col-lg-4 my-login py-3 bd-callout bd-callout-warning">
                 <div class="col-lg-12 p-0">
                         <div class="col-sm-12 centrar-custom my-img-content-p">
-                            <img class="my-img-logo-per" src="./assets/img/logobS360.jpg" alt="S360"
-                                title="S360">
+                            <img class="my-img-logo-per" src="./assets/img/logoescudo.png" alt="escudo"
+                                title="escudo">
                         </div>
                 </div>
                 <div class="col-lg-12 p-0 ">
                     <h6 class="text-center my-titulo-texto py-3 border-linea">
-                        SISTEMA DE ENCUESTA ONLINE
+                        SISTEMA DE ENCUESTA MUNICIPIO DE QUITO
                     </h6>
                 </div>
                 <div class="col-lg-12 p-0">

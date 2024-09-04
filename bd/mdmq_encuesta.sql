@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-08-2024 a las 04:59:36
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 04-09-2024 a las 07:11:55
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `s360_encuesta`
+-- Base de datos: `mdmq_encuesta`
 --
 
 -- --------------------------------------------------------
@@ -40,11 +40,7 @@ CREATE TABLE `encuesta_ns` (
 --
 
 INSERT INTO `encuesta_ns` (`id_encuesta`, `encuesta`, `fecha_llenado`, `fecha_creacion`, `estado`) VALUES
-(1, 'Primera generación', '0000-00-00 00:00:00', '2019-10-27 23:11:30', 1),
-(8, 'Segunda generación', '0000-00-00 00:00:00', '2019-10-28 01:02:09', 0),
-(9, 'Tercera generación', '0000-00-00 00:00:00', '2019-10-28 01:03:39', 0),
-(11, 'Cuarta generación', '0000-00-00 00:00:00', '2019-10-28 01:05:36', 0),
-(14, 'Quinta generación', '0000-00-00 00:00:00', '2019-10-28 01:07:03', 0);
+(15, 'Encuesta MDMQ', '0000-00-00 00:00:00', '2024-09-03 23:23:43', 0);
 
 -- --------------------------------------------------------
 
@@ -68,40 +64,6 @@ CREATE TABLE `llenado_ns` (
 --
 
 INSERT INTO `llenado_ns` (`id_llenado`, `id_encuesta`, `id_preg_alternativa`, `my_respuesta`, `my_id_token`, `fecha_llenado`, `estado`, `recomendacion`) VALUES
-(1, 1, 47, '47', '1571801612.4581', '2019-10-22 22:33:32', 1, NULL),
-(2, 1, 41, '41', '1571801612.4581', '2019-10-22 22:33:32', 1, NULL),
-(3, 1, 50, 'sasa', '1571801612.4581', '2019-10-22 22:33:32', 1, NULL),
-(4, 1, 47, '47', '1571801757.4014', '2019-10-22 22:35:57', 1, NULL),
-(5, 1, 41, '41', '1571801757.4014', '2019-10-22 22:35:57', 1, NULL),
-(6, 1, 50, 'sasas', '1571801757.4014', '2019-10-22 22:35:57', 1, NULL),
-(7, 1, 47, '47', '1571801777.7225', '2019-10-22 22:36:17', 1, NULL),
-(8, 1, 41, '41', '1571801777.7225', '2019-10-22 22:36:17', 1, NULL),
-(9, 1, 50, 'sasas', '1571801777.7225', '2019-10-22 22:36:17', 1, NULL),
-(10, 1, 47, '47', '1571804442.0309', '2019-10-22 23:20:42', 1, NULL),
-(11, 1, 41, '41', '1571804442.0309', '2019-10-22 23:20:42', 1, NULL),
-(12, 1, 50, 'ss', '1571804442.0309', '2019-10-22 23:20:42', 1, NULL),
-(13, 1, 47, '47', '1571804605.8033', '2019-10-22 23:23:25', 1, NULL),
-(14, 1, 41, '41', '1571804605.8033', '2019-10-22 23:23:25', 1, NULL),
-(15, 1, 50, 'sasa', '1571804605.8033', '2019-10-22 23:23:25', 1, NULL),
-(16, 1, 47, '47', '1571804764.1014', '2019-10-22 23:26:04', 1, NULL),
-(17, 1, 41, '41', '1571804764.1014', '2019-10-22 23:26:04', 1, NULL),
-(18, 1, 50, 'sss', '1571804764.1014', '2019-10-22 23:26:04', 1, NULL),
-(19, 1, 47, '47', '1571804788.3177', '2019-10-22 23:26:28', 1, NULL),
-(20, 1, 41, '41', '1571804788.3177', '2019-10-22 23:26:28', 1, NULL),
-(21, 1, 50, 'ss', '1571804788.3177', '2019-10-22 23:26:28', 1, NULL),
-(22, 1, 47, '47', '1571805846.3983', '2019-10-22 23:44:06', 1, NULL),
-(23, 1, 41, '41', '1571805846.3983', '2019-10-22 23:44:06', 1, NULL),
-(24, 1, 50, 'ss', '1571805846.3983', '2019-10-22 23:44:06', 1, NULL),
-(25, 1, 47, '47', '1724454263.0342', '2024-08-23 18:04:23', 1, NULL),
-(26, 1, 41, '41', '1724454263.0342', '2024-08-23 18:04:23', 1, NULL),
-(27, 1, 55, '55', '1724454263.0342', '2024-08-23 18:04:23', 1, NULL),
-(28, 1, 56, '56', '1724454263.0342', '2024-08-23 18:04:23', 1, NULL),
-(29, 1, 50, 'mejorar en la atención', '1724454263.0342', '2024-08-23 18:04:23', 1, NULL),
-(30, 1, 47, '47', '1724454292.3497', '2024-08-23 18:04:52', 1, NULL),
-(31, 1, 41, '41', '1724454292.3497', '2024-08-23 18:04:52', 1, NULL),
-(32, 1, 55, '55', '1724454292.3497', '2024-08-23 18:04:52', 1, NULL),
-(33, 1, 56, '56', '1724454292.3497', '2024-08-23 18:04:52', 1, NULL),
-(34, 1, 50, 'mejorar en la atención', '1724454292.3497', '2024-08-23 18:04:52', 1, NULL),
 (35, 1, 47, '47', '1724455531.9462', '2024-08-23 18:25:31', 1, NULL),
 (36, 1, 41, '41', '1724455531.9462', '2024-08-23 18:25:31', 1, NULL),
 (37, 1, 54, '54', '1724455531.9462', '2024-08-23 18:25:31', 1, NULL),
@@ -487,7 +449,12 @@ INSERT INTO `llenado_ns` (`id_llenado`, `id_encuesta`, `id_preg_alternativa`, `m
 (417, 1, 41, '41', '1724468148.9017', '2024-08-23 21:55:48', 1, NULL),
 (418, 1, 54, '54', '1724468148.9017', '2024-08-23 21:55:48', 1, NULL),
 (419, 1, 56, '56', '1724468148.9017', '2024-08-23 21:55:48', 1, NULL),
-(420, 1, 50, 'GRGRGR', '1724468148.9017', '2024-08-23 21:55:48', 1, NULL);
+(420, 1, 50, 'GRGRGR', '1724468148.9017', '2024-08-23 21:55:48', 1, NULL),
+(421, 1, 48, '48', '1725419126.9926', '2024-09-03 22:05:26', 1, NULL),
+(422, 1, 41, '41', '1725419126.9926', '2024-09-03 22:05:26', 1, NULL),
+(423, 1, 54, '54', '1725419126.9926', '2024-09-03 22:05:26', 1, NULL),
+(424, 1, 57, '57', '1725419126.9926', '2024-09-03 22:05:26', 1, NULL),
+(425, 1, 50, 'asssss', '1725419126.9926', '2024-09-03 22:05:26', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -507,36 +474,12 @@ CREATE TABLE `pregunta_ns` (
 --
 
 INSERT INTO `pregunta_ns` (`id_pregunta`, `pregunta`, `id_tipo_preg`, `estado`) VALUES
-(1, '¿Cuál es tu color favorito?', 1, 0),
-(2, '¿Qué piensas al estar solo?', 1, 0),
-(3, '¿Qué valoras más?', 1, 0),
-(4, '¿Qué es lo que valoras más en tu vida?', 1, 0),
-(5, 'Soy un radio', 2, 0),
-(6, 'dasdsadasd', 3, 0),
-(7, 'Sugerencia', 3, 0),
-(8, 'dasdsa', 1, 0),
-(9, 'dasdas', 1, 0),
-(10, 'RESP 1', 2, 0),
-(11, 'RESP2', 2, 0),
-(12, 'RESP3', 2, 0),
-(13, 'DSADASD', 2, 0),
-(14, 'dasdas', 2, 0),
-(15, 'dasda', 2, 0),
-(16, 'buenas noches', 3, 0),
-(17, 'Holitas', 3, 0),
-(18, 'dada', 1, 0),
-(19, 'dada', 2, 0),
-(20, '¿Cómo conosiste S360?', 1, 0),
-(21, '¿Hes tanido experiencia en algun volun?', 1, 0),
-(22, '¿Has tenido experiencia en algun voluntariado?', 2, 1),
-(23, 'Sugerencia', 3, 0),
-(24, '¿Cómo conosiste a Superación 360?', 1, 0),
-(25, '¿Cómo conociste a superación 360?', 1, 1),
-(26, 'Sugerencia', 3, 1),
-(27, 'sasas', 1, 0),
-(28, 'dsadasdas', 3, 0),
-(29, 'dadad', 2, 1),
-(30, 'dadasd', 2, 1);
+(1, 'dasdsa', 1, 0),
+(2, 'dasdas', 1, 0),
+(3, 'dsadasdas', 3, 0),
+(4, 'sasas', 1, 0),
+(5, 'dadadssss', 2, 1),
+(6, 'dadasd', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -694,9 +637,9 @@ CREATE TABLE `tipo_pregunta_ns` (
 --
 
 INSERT INTO `tipo_pregunta_ns` (`id_tipo_preg`, `tipo`, `estado`) VALUES
-(1, 'Check - Respuesta Multiple', 1),
-(2, 'Radio - Respuesta Unica', 1),
-(3, 'Text - Respuesta Texto', 1);
+(1, 'Respuesta Multiple', 1),
+(2, 'Respuesta Unica', 1),
+(3, 'Respuesta Texto', 1);
 
 -- --------------------------------------------------------
 
@@ -719,7 +662,8 @@ CREATE TABLE `usuario_ns` (
 --
 
 INSERT INTO `usuario_ns` (`id_usuario`, `nombres`, `apellidos`, `usuario`, `clave`, `fecha_crea`, `estado`) VALUES
-(1, 'Francisco Javier', 'Quinteros Andrade', 'admin', '1234', '2019-10-28 00:15:39', 1);
+(1, 'Francisco Javier', 'Quinteros Andrade', 'admin', '1234', '2024-09-04 00:15:39', 1),
+(2, 'Jose David', 'Gangotena Altamirano', 'jdgangotena', '123456', '2024-09-03 23:50:47', 1);
 
 --
 -- Índices para tablas volcadas
@@ -781,13 +725,13 @@ ALTER TABLE `usuario_ns`
 -- AUTO_INCREMENT de la tabla `encuesta_ns`
 --
 ALTER TABLE `encuesta_ns`
-  MODIFY `id_encuesta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_encuesta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `llenado_ns`
 --
 ALTER TABLE `llenado_ns`
-  MODIFY `id_llenado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=421;
+  MODIFY `id_llenado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=426;
 
 --
 -- AUTO_INCREMENT de la tabla `pregunta_ns`
@@ -799,7 +743,7 @@ ALTER TABLE `pregunta_ns`
 -- AUTO_INCREMENT de la tabla `preg_alternativa_ns`
 --
 ALTER TABLE `preg_alternativa_ns`
-  MODIFY `id_preg_alternativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_preg_alternativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT de la tabla `preg_encuesta_ns`
@@ -823,7 +767,7 @@ ALTER TABLE `tipo_pregunta_ns`
 -- AUTO_INCREMENT de la tabla `usuario_ns`
 --
 ALTER TABLE `usuario_ns`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

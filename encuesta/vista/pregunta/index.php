@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>GESTIÓN ENCUESTA</title>
+    <title>ENCUESTAS MDMQ</title>
         <?php
             include("./../login/seguridad.php");
             $security = new seguridad();
@@ -20,15 +20,15 @@
                         <div class="row">
                             <div class="col-lg-2 p-0 centrar-custom">
                                 <img class="my-logo-per img-fluid" 
-                                    src="<?php echo $ruta; ?>assets/img/logobS360.jpg" alt="S360"
+                                    src="<?php echo $ruta; ?>assets/img/logoescudo.png" alt="escudo"
                                     title="S360">
                             </div>
                             <div class="col-lg-6 p-0 text-left">
                                 <ul class="my-lista-logo">
-                                    <li class="text-uppercase">SUPERACIÓN 360</li>
-                                    <li class="text-uppercase">SISTEMA DE ENCUESTA ONLINE</li>
+                                    <li class="text-uppercase">MUNICIPIO DE QUITO</li>
+                                    <li class="text-uppercase">SISTEMA DE ENCUESTAS</li>
                                     <li class="text-underline"></li>
-                                    <li class="">Poner el área que gestiono el proyecto</li>
+                                    <li class="">Dirección Metropolitana de Servicios Ciudadanos</li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 p-0 text-left">
@@ -81,7 +81,7 @@
                             </div>
                             <div class="col-lg-2 centrar-custom">
                                 <img class="my-img-per img-fluid" 
-                                    src="<?php echo $ruta; ?>assets/img/usuarioa.png" 
+                                    src="<?php echo $ruta; ?>assets/img/oso.png" 
                                     alt="usuario" title="Usuario">
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                                 </div>
                                 <select class="form-control form-control-sm" name="my_encuesta" id="my_encuesta"
                                     onchange="visualizarEncuesta();" title="Seleccione tipo encuesta" autocomplete="off">
-                                    <option value="0" selected >[SELECCIONAR]</option>
+                                    <option value="0" selected >Seleccionar</option>
                                 </select>
                                 <button type="button" id="btn-nuevo-te" class="btn btn-primary btn-sm mx-1" 
                                     onclick="nuevaEncuesta();" title="Nueva encuesta">
@@ -114,11 +114,11 @@
 
                             <div class="input-group input-group-sm py-1">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" title="Tipo pregunta">Tipo Pregunta</span>
+                                    <span class="input-group-text" title="Tipo pregunta">Tipo de pregunta</span>
                                 </div>
                                 <select class="form-control form-control-sm" name="my_tp_preg" id="my_tp_preg"
                                     onchange="habilitaPorTPregunta(this)" title="Seleccione tipo pregunta" autocomplete="off">
-                                    <option value="0" selected >[SELECCIONAR]</option>
+                                    <option value="0" selected >Seleccionar</option>
                                 </select>
                             </div>
 

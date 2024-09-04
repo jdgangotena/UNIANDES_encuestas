@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo $ruta; ?>assets/img/logo.ico" />
+<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo $ruta; ?>assets/img/panecillo.png" />
 <!-- SECCIÓN -->
 <link rel="stylesheet" href="<?php echo $ruta; ?>assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo $ruta; ?>assets/css/font-awesome.min.css">

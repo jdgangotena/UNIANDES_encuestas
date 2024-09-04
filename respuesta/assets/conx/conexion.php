@@ -4,7 +4,7 @@ class conexion {
     private static $servidor = "localhost";
     private static $usuario = "root";
     private static $contrasenia = "";
-    private static $basedatos = "s360_encuesta";
+    private static $basedatos = "mdmq_encuesta";
 
     private $conexion;
     private $cod_auto = 0;
