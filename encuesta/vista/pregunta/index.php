@@ -21,7 +21,7 @@
                             <div class="col-lg-2 p-0 centrar-custom">
                                 <img class="my-logo-per img-fluid" 
                                     src="<?php echo $ruta; ?>assets/img/logoescudo.png" alt="escudo"
-                                    title="S360">
+                                    title="escudo">
                             </div>
                             <div class="col-lg-6 p-0 text-left">
                                 <ul class="my-lista-logo">
@@ -51,7 +51,7 @@
                                     <li>
                                         <button type="button" class="my-btn-per" id="my-btn-menu-per" 
                                             onclick="abrirOpciones();">
-                                            <i class="fa fa-th-list fa-sm px-1"></i>
+                                            <i class="fa fa-th-list fa-2x text-white px-1"></i>
                                             <div class="my-usuario-opcion bg-white" id="my-usuario-opcion" 
                                                 style="display: none;">
                                                 <div class="my-opciones p-1 text-left d-none">
@@ -89,83 +89,90 @@
                 </div>
         </div>
 
-        <div class="col-lg-12 my-contenedor-hijo">
-            <div class="row">
-                <div class="col-lg-6 p-0">
-                <div class="card">
-                        <div class="card-body">
-                            <div class="col-lg-12 p-0">
-                                <h5 class="text-left my-titulo-texto py-3">Registrar Preguntas</h5>
-                            </div>
+        <div class="container">
+    <div class="row">
+        <!-- Sección de Registrar Preguntas -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-lg-12 p-0">
+                        <h5 class="text-left my-titulo-texto py-3">Registrar Preguntas</h5>
+                    </div>
 
-                            <div class="input-group input-group-sm py-1">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" title="Encuesta">Encuesta</span>
-                                </div>
-                                <select class="form-control form-control-sm" name="my_encuesta" id="my_encuesta"
-                                    onchange="visualizarEncuesta();" title="Seleccione tipo encuesta" autocomplete="off">
-                                    <option value="0" selected >Seleccionar</option>
-                                </select>
-                                <button type="button" id="btn-nuevo-te" class="btn btn-primary btn-sm mx-1" 
-                                    onclick="nuevaEncuesta();" title="Nueva encuesta">
-                                    <i class="fa fa-plus fa-sm px-1" ></i>
-                                </button>
-                            </div>
+                    <button type="button" id="btn-nuevo-te" class="btn btn-primary btn-sm mx-1" 
+                        onclick="nuevaEncuesta();" title="Nueva encuesta">
+                        <i class="fa fa-plus fa-sm px-1"></i>
+                    </button>
 
-                            <div class="input-group input-group-sm py-1">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" title="Tipo pregunta">Tipo de pregunta</span>
-                                </div>
-                                <select class="form-control form-control-sm" name="my_tp_preg" id="my_tp_preg"
-                                    onchange="habilitaPorTPregunta(this)" title="Seleccione tipo pregunta" autocomplete="off">
-                                    <option value="0" selected >Seleccionar</option>
-                                </select>
-                            </div>
+                    <div class="input-group input-group-sm py-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" title="Encuesta">Encuesta</span>
+                        </div>
+                        <select class="form-control form-control-sm" name="my_encuesta" id="my_encuesta"
+                            onchange="visualizarEncuesta();" title="Seleccione tipo encuesta" autocomplete="off">
+                            <option value="0" selected>Seleccionar</option>
+                        </select>
+                    </div>
 
-                            <div class="input-group input-group-sm py-1">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" title="Pregunta">Pregunta</span>
-                                </div>
-                                <input type="text" name="my_preg" id="my_preg" class="form-control" 
-                                    placeholder="Escribe una pregunta" title="Escribe una pregunta" 
-                                    autocomplete="off">
-                                <button type="button" id="btn-nuevo-alt" class="btn btn-success btn-sm mx-1" 
-                                    onclick="guardarPregunta();" title="Guardar pregunta">
-                                    <i class="fa fa-save fa-lg px-1" ></i>
-                                </button>
-                            </div>
-                            
-                            <div class="col-lg-12 m-3" id="my_alternativas">
-                                <div class="input-group input-group-sm py-1">
-                                    <input type="text" name="my_alter0" id="my_alter0" class="form-control my-tam-alter" disabled
-                                        placeholder="Escribe una alternativa" title="Escribe una alternativa" 
-                                        autocomplete="off">
-                                    <button type="button" id="btn_alt0" class="btn btn-warning btn-sm mx-1" disabled autocomplete="off"
-                                        onclick="nuevaAlternativa('my_alter0', 'btn_alt0', 'my_div0', 'my_orden0');" title="Nueva alternativa">
-                                        <i class="fa fa-plus fa-sm px-1" ></i>
-                                    </button>
-                                    <input type="text" name="my_orden0" id="my_orden0" class="form-control my-tam-order" disabled
-                                        placeholder="Orden" title="Orden" autocomplete="off">
-                                </div>
-                            </div>
+                    <div class="input-group input-group-sm py-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" title="Tipo pregunta">Tipo de pregunta</span>
+                        </div>
+                        <select class="form-control form-control-sm" name="my_tp_preg" id="my_tp_preg"
+                            onchange="habilitaPorTPregunta(this)" title="Seleccione tipo pregunta" autocomplete="off">
+                            <option value="0" selected>Seleccionar</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group input-group-sm py-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" title="Pregunta">Pregunta</span>
+                        </div>
+                        <input type="text" name="my_preg" id="my_preg" class="form-control" 
+                            placeholder="Escribe una pregunta" title="Escribe una pregunta" 
+                            autocomplete="off">
+                    </div>
+
+                    <div class="col-lg-12 m-3" id="my_alternativas">
+                        <div class="input-group input-group-sm py-1">
+                            <input type="text" name="my_alter0" id="my_alter0" class="form-control my-tam-alter" disabled
+                                placeholder="Escribe una alternativa" title="Escribe una alternativa" 
+                                autocomplete="off">
+                            <button type="button" id="btn_alt0" class="btn btn-warning btn-sm mx-1" disabled autocomplete="off"
+                                onclick="nuevaAlternativa('my_alter0', 'btn_alt0', 'my_div0', 'my_orden0');" title="Nueva alternativa">
+                                <i class="fa fa-plus fa-sm px-1"></i>
+                            </button>
+                            <input type="text" name="my_orden0" id="my_orden0" class="form-control my-tam-order" disabled
+                                placeholder="Orden" title="Orden" autocomplete="off">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 p-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="col-lg-12 p-0">
-                                <h5 class="text-left my-titulo-texto py-3">Vista Previa de Preguntas</h5>
-                            </div>
-                            <div class="col-lg-12" id="my_encuesta_view">
 
-                            </div>
-                        </div>
+                    <div>
+                        <button type="button" id="btn-nuevo-alt" class="btn btn-success btn-sm mx-1" 
+                            onclick="guardarPregunta();" title="Guardar pregunta">
+                            <i class="fa fa-save fa-lg px-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Vista Previa de Preguntas -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-lg-12 p-0">
+                        <h5 class="text-left my-titulo-texto py-3">Vista Previa de Preguntas</h5>
+                    </div>
+                    <div class="col-lg-12" id="my_encuesta_view">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <!-- Modal Reporte -->
     <div class="modal fade" id="miModalReEncu" tabindex="-1" role="dialog"aria-hidden="true">

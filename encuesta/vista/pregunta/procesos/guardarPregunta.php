@@ -25,7 +25,7 @@ if (isset($_POST['preg']) && isset($_POST['alter']) && isset($_POST['encu'])
     if ($resultado) {
         $mensaje = "OK";
 
-        $hconsulta = "INSERT INTO preg_alternativa_ns(id_pregunta, orden, alternativa) VALUES ";
+        $hconsulta = "INSERT INTO preg_alternativa_ns(id_pregunta, alternativa, orden) VALUES ";
         $values = [];
 
         for ($i = 0; $i < $limite; $i++) {
