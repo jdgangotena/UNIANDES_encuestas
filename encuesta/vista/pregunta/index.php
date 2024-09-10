@@ -101,7 +101,7 @@
 
                     <button type="button" id="btn-nuevo-te" class="btn btn-primary btn-sm mx-1" 
                         onclick="nuevaEncuesta();" title="Nueva encuesta">
-                        <i class="fa fa-plus fa-sm px-1"></i>
+                        <i class="fa fa-plus fa-sm px-1"></i>Agregar encuesta
                     </button>
 
                     <div class="input-group input-group-sm py-1">
@@ -150,7 +150,7 @@
                     <div>
                         <button type="button" id="btn-nuevo-alt" class="btn btn-success btn-sm mx-1" 
                             onclick="guardarPregunta();" title="Guardar pregunta">
-                            <i class="fa fa-save fa-lg px-1"></i>
+                            <i class="fa fa-save fa-lg px-1"></i>Guardar pregunta
                         </button>
                     </div>
                 </div>
