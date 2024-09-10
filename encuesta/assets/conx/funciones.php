@@ -1,6 +1,6 @@
 <?php
 require('conexion.php');
-class funciones extends conexion{
+class funciones extends conexion {
     #Listo el seleccionar generico:
     public function __construct() { }
 
@@ -23,6 +23,11 @@ class funciones extends conexion{
     public function codAutoGenerado(){
         $resultado = $this->getCodigoAuto();
         return $resultado;
+    }
+
+    # Nuevo método sanitize
+    public function sanitize($input) {
+        return htmlspecialchars(strip_tags($input), ENT_QUOTES, 'UTF-8');
     }
 }
 ?>
