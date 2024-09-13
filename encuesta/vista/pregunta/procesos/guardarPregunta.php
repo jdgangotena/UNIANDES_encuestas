@@ -16,6 +16,7 @@ if (isset($_POST['preg']) && isset($_POST['alter']) && isset($_POST['encu'])
     $encuesta = $_POST['encu'];
     $tipo_preg = $_POST['tipo'];
     
+    
     $limite = sizeof($alternativas);
 
     $consulta = "INSERT INTO pregunta_ns(pregunta, id_tipo_preg) VALUES ('$pregunta', $tipo_preg);";
@@ -28,14 +29,18 @@ if (isset($_POST['preg']) && isset($_POST['alter']) && isset($_POST['encu'])
         $hconsulta = "INSERT INTO preg_alternativa_ns(id_pregunta, alternativa, orden) VALUES ";
         $values = [];
 
+       
         for ($i = 0; $i < $limite; $i++) {
             $alternativa_limpia = $conectar->sanitize($alternativas[$i]);
+            echo "Alternativa $i: Tipo de pregunta es $tipo_preg<br>";
+            echo "Alternativa original $i: " . $alternativas[$i] . "<br>";
+    echo "Alternativa limpia $i: $alternativa_limpia<br>";
             if (!empty($alternativa_limpia)) {
                 if ($tipo_preg == 3) {
-                    $values[] = "($cod_auto, 0, '$alternativa_limpia')";
+                    $values[] = "($cod_auto, '$alternativa_limpia', 0)";
                 } else {
                     $orden_limpio = intval($orden[$i]);
-                    $values[] = "($cod_auto, $orden_limpio, '$alternativa_limpia')";
+                    $values[] = "($cod_auto, '$alternativa_limpia', $orden_limpio)";
                 }
             } else {
                 echo "Advertencia: Se encontró una alternativa vacía o inválida para el índice $i.<br>";
