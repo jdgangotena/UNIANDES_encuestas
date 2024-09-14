@@ -32,10 +32,10 @@ if (isset($_POST['preg']) && isset($_POST['alter']) && isset($_POST['encu'])
             $alternativa_limpia = $conectar->sanitize($alternativas[$i]);
             $orden_limpio = intval($orden[$i]);
 
-            echo "Alternativa $i: Tipo de pregunta es $tipo_preg<br>";
-            echo "Alternativa original $i: " . $alternativas[$i] . "<br>";
-            echo "Alternativa limpia $i: $alternativa_limpia<br>";
-            echo "Orden limpio $i: $orden_limpio<br>";
+            //echo "Alternativa $i: Tipo de pregunta es $tipo_preg<br>";
+            //echo "Alternativa original $i: " . $alternativas[$i] . "<br>";
+            //echo "Alternativa limpia $i: $alternativa_limpia<br>";
+            //echo "Orden limpio $i: $orden_limpio<br>";
 
             // Si el tipo de pregunta es 3, la alternativa debe estar vacía y el orden en 0
             if ($tipo_preg == 3) {
